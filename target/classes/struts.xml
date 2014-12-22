@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+
+	<!-- <constant name="struts.devMode" value="true" /> -->
+	<!-- 打印详细错误信息 -->
+
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<!-- 修改之后自动重启tomcat -->
+
+	<package name="actions" namespace="/actions" extends="struts-default">
+		<!-- action的内容是指定方法名。 -->
+		<action name="*" class="loginAction" method="{1}">
+			<result name="success">/welcome.jsp</result>
+		</action>
+	</package>
+
+</struts>
+	
