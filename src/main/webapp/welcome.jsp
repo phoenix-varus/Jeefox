@@ -7,6 +7,7 @@
 <title>Jeefox</title>
 </head>
 <body>
-Welcome to Jeefox!
+	<h1>Welcome to Jeefox</h1>
+	<a href="jeefox/login"> My friend!</a>
 </body>
 </html>

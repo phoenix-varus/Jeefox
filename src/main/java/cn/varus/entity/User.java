@@ -3,8 +3,13 @@ package cn.varus.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
 
 @Entity
+@Table(name = "cms_user")
+@Component
 public class User {
 	private Long id;
 	private String name;

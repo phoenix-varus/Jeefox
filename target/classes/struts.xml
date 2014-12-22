@@ -11,10 +11,10 @@
 	<constant name="struts.configuration.xml.reload" value="true" />
 	<!-- 修改之后自动重启tomcat -->
 
-	<package name="actions" namespace="/actions" extends="struts-default">
+	<package name="actions" namespace="/jeefox" extends="struts-default">
 		<!-- action的内容是指定方法名。 -->
 		<action name="*" class="loginAction" method="{1}">
-			<result name="success">/welcome.jsp</result>
+			<result name="success">/userInfo.jsp</result>
 		</action>
 	</package>
 
